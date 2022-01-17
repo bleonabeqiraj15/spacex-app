@@ -51,7 +51,7 @@ const Home = () => {
                         <h2>{founder}</h2>
                         <h6>{summary}</h6>
                     </Grid>
-                    <Grid item xs={12} lg={2} textAlign="center" style={{ padding: "0 30px 20px", fontSize: "30px", color: "#000" }} className='social-media'>
+                    <Grid item xs={12} lg={2} textAlign="center" style={{ padding: "30px 20px", fontSize: "30px", color: "#000" }} className='social-media'>
                         <div style={{ padding: "10px 0" }}>
                             <FaTwitter />
                         </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
                     <Logo></Logo>
 
                 </Grid>
-                <Grid item xs={6} sm={6} lg={3} textAlign="center" style={{ padding: "1px" }} className='founder'>
+                <Grid item xs={6} sm={6} lg={3} textAlign="center" style={{ padding: "1px" }} className='menu-links'>
                     <MenuLinks></MenuLinks>
                 </Grid>
 
