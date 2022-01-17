@@ -35,9 +35,9 @@ const Launches = () => {
             <Navbar />
             <h1>Launches</h1>
             <BackButton />
-            <div>
-                <Launch launches={launches}></Launch>
-            </div>
+            {/* <div> */}
+            <Launch launches={launches}></Launch>
+            {/* </div> */}
         </div>
     )
 }

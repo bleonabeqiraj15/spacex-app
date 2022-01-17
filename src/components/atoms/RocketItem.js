@@ -50,28 +50,7 @@ const RocketID = ({ rocket }) => {
                     </div>
                 </div>
             </div>
-            <div className="test">
-
-            </div>
         </>
-        // <Card sx={{ width: 320 }} className='cardInfo'>
-        //     <CardMedia
-        //         component="img"
-        //         height="194"
-        //         // image={rocket.links.flickr_images[0]}
-        //         alt="Paella dish"
-        //     />
-        //     <CardContent>
-        //         <Typography variant="body2" color="text.secondary">
-        //             {rocket.name}
-        //         </Typography>
-        //     </CardContent>
-        //     <CardActions disableSpacing>
-        //         <Link to={`/rockets/${rocket.id}`}>{rocket.name}</Link>
-        //     </CardActions>
-        // </Card>
-
-
     )
 }
 
