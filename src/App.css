@@ -14,7 +14,7 @@
     width: 150px;
     height: 20px;
     object-fit: contain;
-    margin: 25px;
+    margin: 0 0 0 25px;
 }
 
 .spacex-app {
@@ -44,6 +44,17 @@
 
 .employees p {
     font-size: 22px;
+}
+
+.founder a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+}
+
+.founder a:hover {
+    color: #8da9d1;
+    transition: all .2s ease-in-out;
 }
 
 .founder h2 {
@@ -152,6 +163,21 @@ hr {
     margin: auto !important;
 }
 
+@media screen and (max-width: 576px) {
+    .employees h4 {
+        font-size: 40px;
+    }
+
+    .founder {
+        padding: 10px !important;
+    }
+
+    .founder h2 {
+        font-size: 62px;
+        letter-spacing: 0;
+    }
+}
+
 @media screen and (max-width: 767px) {
 
     .home,
@@ -166,6 +192,11 @@ hr {
     .rocketDetails {
         grid-template-columns: none;
     }
+
+    .social-media {
+        display: inherit;
+        justify-content: space-evenly;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -177,5 +208,14 @@ hr {
         padding: "0 30px 20px";
         text-align: right !important;
         color: #fff !important;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+
+    .employees,
+    .social-media {
+        display: inherit;
+        justify-content: space-evenly;
     }
 }

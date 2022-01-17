@@ -31,7 +31,7 @@ const Home = () => {
             <div className="home container">
                 <Grid container
                     alignItems="center"
-                    style={{ height: "90%" }}>
+                    style={{ height: "100%", padding: "20px 0" }}>
                     <Grid item xs={12} lg={2} style={{ padding: "20px", textAlign: "center" }} className='employees'>
                         <div style={{ padding: "10px 0" }}>
                             <h4>{founded}</h4>
