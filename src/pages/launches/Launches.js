@@ -14,27 +14,22 @@ import Navbar from '../../components/molecules/Navbar';
 
 const Launches = () => {
 
-    // const rocketId = useParams().id;
-
-    // const { data, loading, error } = useQuery(GET_ROCKET_INFO, {
-    //     variables: { rocketId },
-    // });
-
-
     const { data, loading, error } = useQuery(GET_LAUNCHES_INFO);
     if (loading) return <div>Loading</div>;
     if (error) return <Error error={error}></Error>
 
-    console.log(data)
     const launches = data.launchesPast.filter(
         launch => launch.links.article_link && launch.links.flickr_images.length > 0
     );
+    console.log(data)
 
     return (
         <div>
-            <Navbar />
-            <BackButton />
-            <Launch launches={launches}></Launch>
+            <div className='missions'>
+                <Navbar />
+                <BackButton />
+                <Launch launches={launches}></Launch>
+            </div>
         </div>
     )
 }

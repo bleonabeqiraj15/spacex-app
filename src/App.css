@@ -52,7 +52,8 @@
     border-bottom: 3px solid #fff;
 }
 
-.menu-links a:hover {
+.menu-links a:hover,
+.article-link {
     color: #8da9d1;
     transition: all .2s ease-in-out;
 }
@@ -63,16 +64,49 @@
     letter-spacing: 5px;
 }
 
-.spacexData {
+/* .spacexData {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-}
+} */
 
 /* .rockets {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
  } */
 
+
+/* LAUNCHES */
+.missions {
+    background-color: #000;
+}
+
+.mission h5,
+.mission p {
+    font-weight: 600;
+}
+
+.mission-images {
+    /* width: 250px; */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.mission-box {
+    background-color: #fff;
+}
+
+.pages-height {
+    min-height: calc(100vh - 86px);
+    padding: 80px 0;
+}
+
+.article-link {
+    color: #939294;
+    text-decoration: none;
+}
+
+/* ROCKETS */
 .rocketInfo {
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(600px, 1fr));
@@ -177,6 +211,8 @@ hr {
     .founder h1 {
         font-size: 50px;
     }
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -198,9 +234,14 @@ hr {
         display: inherit;
         justify-content: space-evenly;
     }
+
+    .mission {
+        display: inline-grid !important;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+
     .home {
         min-height: calc(100vh - 86px);
         display: grid;
@@ -223,4 +264,9 @@ hr {
         display: inherit;
         justify-content: space-evenly;
     }
+}
+
+
+.test2 {
+    background-color: red;
 }
