@@ -26,8 +26,6 @@
     background-position: bottom;
     background-attachment: fixed;
     color: #fff;
-    /* background-color: black; */
-    /* margin-top: -75px; */
 }
 
 
@@ -58,22 +56,20 @@
     transition: all .2s ease-in-out;
 }
 
+.social-media a {
+    color: #000;
+    transition: all .2s ease-in-out;
+}
+
+.social-media a:hover {
+    color: #8da9d1;
+}
+
 .founder h1 {
     font-size: 78px;
     font-weight: 500;
     letter-spacing: 5px;
 }
-
-/* .spacexData {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-} */
-
-/* .rockets {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
- } */
-
 
 /* LAUNCHES */
 .missions {
@@ -253,7 +249,10 @@ hr {
 
     .social-media {
         display: inline-grid !important;
-        color: #fff !important;
+    }
+
+    .social-media a {
+        color: #fff;
     }
 }
 
@@ -264,9 +263,4 @@ hr {
         display: inherit;
         justify-content: space-evenly;
     }
-}
-
-
-.test2 {
-    background-color: red;
 }

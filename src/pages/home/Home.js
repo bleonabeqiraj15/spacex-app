@@ -19,12 +19,7 @@ const Home = () => {
     if (loading) return <div>Loading</div>;
     if (error) return <Error error={error}></Error>
 
-    const { founder, employees, founded, name, summary, vehicles, links } = data.company;
-
-    console.log("dat a ", data)
-
-
-
+    const { founder, employees, founded, summary, vehicles, links } = data.company;
 
     return (
         <div className="spacex-app">
@@ -68,15 +63,16 @@ const Home = () => {
                             {summary}
                         </Typography>
                     </Grid>
-                    <Grid item container xs={12} lg={2} textAlign="center" style={{ padding: "30px 20px", fontSize: "30px", color: "#000" }} className='social-media'>
+                    <Grid item container xs={12} lg={2} textAlign="center" style={{ padding: "30px 20px", fontSize: "30px" }} className='social-media'>
                         <Typography variant="div" style={{ padding: "10px 0" }} >
-                            <FaTwitter />
+                            <a href={links.twitter} target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
                         </Typography>
                         <Typography variant="div" style={{ padding: "10px 0" }} >
-                            <ImFlickr />
+                            <a href={links.flickr} target="_blank" rel="noopener noreferrer"><ImFlickr /></a>
                         </Typography>
                         <Typography variant="div" style={{ padding: "10px 0" }} >
-                            <GoDeviceDesktop />
+                            <a href={links.website} target="_blank" rel="noopener noreferrer"><GoDeviceDesktop /></a>
+
                         </Typography>
                     </Grid>
                 </Grid>
