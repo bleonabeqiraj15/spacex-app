@@ -25,19 +25,19 @@ const RocketItem = ({ rocket }) => {
                 <hr />
                 <div className="rocket-details">
                     <div className="text-shadow">
-                        <div className=".rocket-parameter">
+                        <div>
                             <h3>{rocket.height.meters}m</h3>
                         </div>
                         <h6>height</h6>
                     </div>
                     <div className="text-shadow">
-                        <div className=".rocket-parameter">
+                        <div>
                             <h3>{rocket.diameter.meters}m</h3>
                         </div>
                         <h6>diameter</h6>
                     </div>
                     <div className="text-shadow">
-                        <div className=".rocket-parameter">
+                        <div>
                             <h3>{rocket.mass.kg}kg</h3>
                         </div>
                         <h6>mass</h6>

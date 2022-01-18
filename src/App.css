@@ -157,6 +157,7 @@
     color: white;
     text-align: center;
     font-size: 48px;
+    padding: 20px;
 }
 
 .rocket-parameters {
@@ -165,13 +166,13 @@
     align-items: baseline;
 }
 
-.rocket-parameters h3 {
-    font-weight: 400;
-    font-size: 40px;
-}
-
 .text-shadow {
     text-shadow: 2px 3px 14px #070101;
+}
+
+.text-shadow h3 {
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .text-shadow h6 {
