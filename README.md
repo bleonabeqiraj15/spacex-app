@@ -4,7 +4,7 @@ npm install
 
 <!-- run app -->
 
-npm run
+npm start
 
 <!-- reactjs version -->
 
