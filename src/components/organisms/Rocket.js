@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom';
 
+// queries
 import { GET_ROCKET_INFO } from '../../graphql/RocketsQuery'
 
 // components

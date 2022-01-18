@@ -22,8 +22,6 @@ query GET_ROCKETS {
     }
 `;
 
-
-
 export const GET_ROCKET_INFO = gql`
     query GET_ROCKET_INFO($rocketId: ID!) {
         rocket(id: $rocketId) {

@@ -20,8 +20,6 @@ const Navbar = () => {
                 </Grid>
 
             </Grid>
-            {/* <Logo></Logo>
-            <MenuLinks></MenuLinks> */}
         </div>
     )
 }

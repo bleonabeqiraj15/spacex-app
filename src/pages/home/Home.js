@@ -21,6 +21,9 @@ const Home = () => {
 
     const { founder, employees, founded, summary, vehicles, links } = data.company;
 
+
+    console.log({ data, loading, error })
+
     return (
         <div className="spacex-app">
             <Navbar></Navbar>
@@ -29,19 +32,6 @@ const Home = () => {
                     alignItems="center"
                     style={{ height: "100%", padding: "20px 0" }}>
                     <Grid item xs={12} lg={2} style={{ padding: "20px", textAlign: "center" }} className='employees'>
-                        {/* <div style={{ padding: "10px 0" }}>
-                            <h4>{founded}</h4>
-                            <p>founded</p>
-                        </div>
-                        <div style={{ padding: "10px 0" }}>
-                            <h4>{employees}</h4>
-                            <p>employees</p>
-                        </div>
-                        <div style={{ padding: "10px 0" }}>
-                            <h4>{vehicles}</h4>
-                            <p>vehicles</p>
-                        </div> */}
-
                         <Grid container direction="column" style={{ padding: "10px 0" }}>
                             <Typography item component="h4">{founded}</Typography>
                             <Typography item component="p">founded</Typography>
@@ -72,7 +62,6 @@ const Home = () => {
                         </Typography>
                         <Typography variant="div" style={{ padding: "10px 0" }} >
                             <a href={links.website} target="_blank" rel="noopener noreferrer"><GoDeviceDesktop /></a>
-
                         </Typography>
                     </Grid>
                 </Grid>
