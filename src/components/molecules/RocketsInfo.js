@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom'
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 
 const RocketsInfo = ({ rocket }) => {
 
@@ -29,14 +25,14 @@ const RocketsInfo = ({ rocket }) => {
 
         <div style={imgStyle}>
             <div className="pos-link">
-                <Link to='/rockets' className="link" style={{ color: '#000' }}>Go back <AiOutlineArrowLeft /></Link>
+                <Link to='/rockets' className="link" style={{ color: '#000' }}><AiOutlineArrowLeft /> Go back </Link>
             </div>
 
             <Grid container style={{ p: 2, margin: 'auto', maxWidth: 450, flexGrow: 1, padding: "100px 60px 30px" }} className='roc-details'>
                 <Grid item xs={12} sm container spacing={2}>
                     <Grid item xs direction="column" container>
                         <Grid item xs>
-                            <Typography variant="h2">
+                            <Typography variant="h3">
                                 {name}
                             </Typography>
                             <Typography variant="body1" style={{ marginTop: "45px" }}>

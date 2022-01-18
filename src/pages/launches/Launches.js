@@ -33,11 +33,8 @@ const Launches = () => {
     return (
         <div>
             <Navbar />
-            <h1>Launches</h1>
             <BackButton />
-            {/* <div> */}
             <Launch launches={launches}></Launch>
-            {/* </div> */}
         </div>
     )
 }

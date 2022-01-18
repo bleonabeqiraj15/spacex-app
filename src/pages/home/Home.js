@@ -1,6 +1,7 @@
 import React from 'react'
 import { useQuery } from '@apollo/client';
 import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 import { FaTwitter } from 'react-icons/fa';
 import { ImFlickr } from 'react-icons/im';
 import { GoDeviceDesktop } from 'react-icons/go';
@@ -33,7 +34,7 @@ const Home = () => {
                     alignItems="center"
                     style={{ height: "100%", padding: "20px 0" }}>
                     <Grid item xs={12} lg={2} style={{ padding: "20px", textAlign: "center" }} className='employees'>
-                        <div style={{ padding: "10px 0" }}>
+                        {/* <div style={{ padding: "10px 0" }}>
                             <h4>{founded}</h4>
                             <p>founded</p>
                         </div>
@@ -44,24 +45,39 @@ const Home = () => {
                         <div style={{ padding: "10px 0" }}>
                             <h4>{vehicles}</h4>
                             <p>vehicles</p>
-                        </div>
+                        </div> */}
 
+                        <Grid container direction="column" style={{ padding: "10px 0" }}>
+                            <Typography item component="h4">{founded}</Typography>
+                            <Typography item component="p">founded</Typography>
+                        </Grid>
+                        <Grid container direction="column" style={{ padding: "10px 0" }}>
+                            <Typography item component="h4">{employees}</Typography>
+                            <Typography item component="p">employees</Typography>
+                        </Grid>
+                        <Grid container direction="column" style={{ padding: "10px 0" }}>
+                            <Typography item component="h4">{vehicles}</Typography>
+                            <Typography item component="p">vehicles</Typography>
+                        </Grid>
                     </Grid>
                     <Grid item xs={12} lg={8} textAlign="center" style={{ padding: "40px" }} className='founder'>
-                        <h2>{founder}</h2>
-                        <h6>{summary}</h6>
+                        <Typography variant="h1" style={{ paddingBottom: "10px" }} >
+                            {founder}
+                        </Typography>
+                        <Typography variant="p" >
+                            {summary}
+                        </Typography>
                     </Grid>
-                    <Grid item xs={12} lg={2} textAlign="center" style={{ padding: "30px 20px", fontSize: "30px", color: "#000" }} className='social-media'>
-                        <div style={{ padding: "10px 0" }}>
+                    <Grid item container xs={12} lg={2} textAlign="center" style={{ padding: "30px 20px", fontSize: "30px", color: "#000" }} className='social-media'>
+                        <Typography variant="div" style={{ padding: "10px 0" }} >
                             <FaTwitter />
-                        </div>
-                        <div style={{ padding: "10px 0" }}>
+                        </Typography>
+                        <Typography variant="div" style={{ padding: "10px 0" }} >
                             <ImFlickr />
-                        </div>
-                        <div style={{ padding: "10px 0" }}>
+                        </Typography>
+                        <Typography variant="div" style={{ padding: "10px 0" }} >
                             <GoDeviceDesktop />
-                        </div>
-
+                        </Typography>
                     </Grid>
                 </Grid>
             </div>

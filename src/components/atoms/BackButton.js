@@ -7,7 +7,7 @@ const BackButton = () => {
     return (
         <div className="pos-link">
             {/* <Link to="/">Go back to home</Link> */}
-            <Link to='/' className="link">Go back <AiOutlineArrowLeft /></Link>
+            <Link to='/' className="link"> <AiOutlineArrowLeft /> Go back</Link>
         </div>
     )
 }

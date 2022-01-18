@@ -57,7 +57,7 @@
     transition: all .2s ease-in-out;
 }
 
-.founder h2 {
+.founder h1 {
     font-size: 78px;
     font-weight: 500;
     letter-spacing: 5px;
@@ -122,7 +122,7 @@
     background-color: rgb(228 228 228 / 28%);
 }
 
-.roc-details h2,
+.roc-details h3,
 .roc-details p {
     font-weight: 500;
 }
@@ -167,16 +167,15 @@ hr {
 
 @media screen and (max-width: 576px) {
     .employees h4 {
-        font-size: 40px;
+        font-size: 24px;
     }
 
     .founder {
         padding: 10px !important;
     }
 
-    .founder h2 {
-        font-size: 62px;
-        letter-spacing: 0;
+    .founder h1 {
+        font-size: 50px;
     }
 }
 
@@ -203,7 +202,8 @@ hr {
 
 @media screen and (min-width: 1200px) {
     .home {
-        height: calc(100vh - 86px);
+        min-height: calc(100vh - 86px);
+        display: grid;
     }
 
     .founder {
@@ -211,7 +211,7 @@ hr {
     }
 
     .social-media {
-        padding: "0 30px 20px";
+        display: inline-grid !important;
         color: #fff !important;
     }
 }
