@@ -11,11 +11,11 @@ const Navbar = () => {
             <Grid container
                 alignItems="center"
                 style={{ height: "90%", paddingTop: "20px" }}>
-                <Grid item xs={6} sm={6} lg={9} style={{ padding: "1px" }} className='employees'>
+                <Grid item xs={6} sm={6} lg={9} className='employees'>
                     <Logo></Logo>
 
                 </Grid>
-                <Grid item xs={6} sm={6} lg={3} textAlign="center" style={{ padding: "1px" }} className='menu-links'>
+                <Grid item xs={6} sm={6} lg={3} textAlign="center" className='menu-links'>
                     <MenuLinks></MenuLinks>
                 </Grid>
 

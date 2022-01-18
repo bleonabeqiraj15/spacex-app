@@ -7,10 +7,10 @@ const MenuLinks = () => {
         <Grid container
             alignItems="center"
             style={{ height: "90%" }}>
-            <Grid item xs={6} style={{ textAlign: "right" }} >
+            <Grid item xs={6} >
                 <Link to="/launches">Launches</Link>
             </Grid>
-            <Grid item xs={6} style={{ textAlign: "right" }}>
+            <Grid item xs={6}>
                 <Link to="/rockets">Rockets</Link>
             </Grid>
         </Grid >

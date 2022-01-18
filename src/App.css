@@ -5,14 +5,9 @@
     font-family: 'Heebo', sans-serif;
 }
 
-.navbar {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-}
-
 .spaceXlogo {
     width: 150px;
-    height: 20px;
+    /* height: 20px; */
     object-fit: contain;
     margin: 0 0 0 40px;
 }
@@ -207,8 +202,6 @@ hr {
     .founder h1 {
         font-size: 50px;
     }
-
-
 }
 
 @media screen and (max-width: 767px) {
