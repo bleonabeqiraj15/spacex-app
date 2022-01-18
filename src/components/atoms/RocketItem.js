@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowForward } from 'react-icons/io';
 
-const RocketID = ({ rocket }) => {
+const RocketItem = ({ rocket }) => {
     const imgStyle = {
         backgroundImage: 'url(../images/' + rocket.id + '.jpg)',
         backgroundPosition: 'center center',
@@ -54,4 +54,4 @@ const RocketID = ({ rocket }) => {
     )
 }
 
-export default RocketID
+export default RocketItem

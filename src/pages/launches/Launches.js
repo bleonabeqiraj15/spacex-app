@@ -8,7 +8,6 @@ import { GET_LAUNCHES_INFO } from '../../graphql/PastLaunchesQuery'
 // components
 import BackButton from '../../components/atoms/BackButton';
 import Error from '../../components/atoms/Error';
-// import LaunchesInfo from '../../components/molecules/LaunchesInfo';
 import Launch from '../../components/organisms/Launch';
 import Navbar from '../../components/molecules/Navbar';
 

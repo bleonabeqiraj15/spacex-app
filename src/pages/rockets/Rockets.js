@@ -21,7 +21,7 @@ const Rockets = () => {
             <div className="rockets">
                 <BackButton />
                 {data.rockets.map((rocket) => {
-                    return <RocketItem rocket={rocket}></RocketItem>
+                    return <RocketItem rocket={rocket} key={rocket.id}></RocketItem>
                 })}
             </div>
         </div>
